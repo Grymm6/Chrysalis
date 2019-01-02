@@ -481,18 +481,18 @@ void CActorComponent::OnResetState()
 		m_pActionController->Flush();
 		m_pActionController->Resume();
 
-	//	// Select a character definition based on first / third person mode. Hard coding the default scope isn't a great
-	//	// idea, but it's good enough for now. 
-	//	if (IsViewFirstPerson())
-	//	{
-	//		m_pAdvancedAnimationComponent->SetDefaultScopeContextName("Char1P");
-	//		m_pAdvancedAnimationComponent->SetCharacterFile(m_geometryFirstPerson.value);
-	//	}
-	//	else
-	//	{
-	//		m_pAdvancedAnimationComponent->SetDefaultScopeContextName("Char3P");
-	//		m_pAdvancedAnimationComponent->SetCharacterFile(m_geometryThirdPerson.value);
-	//	}
+		// Select a character definition based on first / third person mode. Hard coding the default scope isn't a great
+		// idea, but it's good enough for now. 
+		if (IsViewFirstPerson())
+		{
+			m_pAdvancedAnimationComponent->SetDefaultScopeContextName("Char1P");
+//			m_pAdvancedAnimationComponent->SetCharacterFile(m_geometryFirstPerson.value);
+		}
+		else
+		{
+			m_pAdvancedAnimationComponent->SetDefaultScopeContextName("Char3P");
+//			m_pAdvancedAnimationComponent->SetCharacterFile(m_geometryThirdPerson.value);
+		}
 
 		// Queue the locomotion action, which switches fragments and tags as needed for actor locomotion.
 		auto locomotionAction = new CActorAnimationActionLocomotion();
@@ -510,20 +510,20 @@ void CActorComponent::OnResetState()
 			//	QueueAction(*new CActorAnimationActionAiming());
 			//}
 
-			// Set the scope tag for look pose.
-			auto& animContext = m_pActionController->GetContext();
-			animContext.state.Set(m_actorMannequinParams->tagIDs.ScopeLookPose, true);
+			//// Set the scope tag for look pose.
+			//auto& animContext = m_pActionController->GetContext();
+			//animContext.state.Set(m_actorMannequinParams->tagIDs.ScopeLookPose, true);
 
-			// Look actions.
-			//if (CActorAnimationActionLookPose::IsSupported(pContext) // HACK: These tests are causing crashes on the second run through.
-				//&& CActorAnimationActionLooking::IsSupported(pContext))
-			{
-				const auto pX = m_pActionController->FindOrCreateProceduralContext(CProceduralContextLook::GetCID());
-				m_pProceduralContextLook = static_cast<CProceduralContextLook*>(pX);
+			//// Look actions.
+			////if (CActorAnimationActionLookPose::IsSupported(pContext) // HACK: These tests are causing crashes on the second run through.
+			//	//&& CActorAnimationActionLooking::IsSupported(pContext))
+			//{
+			//	const auto pX = m_pActionController->FindOrCreateProceduralContext(CProceduralContextLook::GetCID());
+			//	m_pProceduralContextLook = static_cast<CProceduralContextLook*>(pX);
 
-				QueueAction(*new CActorAnimationActionLookPose());
-				QueueAction(*new CActorAnimationActionLooking());
-			}
+			//	QueueAction(*new CActorAnimationActionLookPose());
+			//	QueueAction(*new CActorAnimationActionLooking());
+			//}
 		}
 	}
 	else

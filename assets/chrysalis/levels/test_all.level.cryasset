@@ -3,10 +3,6 @@
   <File path="test_all/test_all.level"/>
  </Files>
  <Dependencies>
-  <Path>%editor%/materials/shaderlist.xml</Path>
-  <Path>%editor%/objects/mtlobjects.mtl</Path>
-  <Path>%editor%/objects/mtlplane.cgf</Path>
-  <Path>%editor%/objects/mtlsphere.cgf</Path>
   <Path>%engine%/engineassets/icons/averagememoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/highmemoryusage.dds</Path>
   <Path>%engine%/engineassets/icons/livepreview.dds</Path>
@@ -342,21 +338,12 @@
   <Path>chrysalis/materials/terrain/grass/grass_01.mtl</Path>
   <Path>chrysalis/objects/items/flashlight/maglite_02d.cgf</Path>
   <Path>chrysalis/objects/items/flashlight/maglite_02d.mtl</Path>
-  <Path>chrysalis/objects/items/flashlight/maglite_02d_ddna.dds</Path>
-  <Path>chrysalis/objects/items/flashlight/maglite_02d_diff.dds</Path>
   <Path>chrysalis/textures/lights/flashlight_projector.dds</Path>
-  <Path>d:/chrysalis/assets/chrysalis/materials/terrain/grass/grass_01.mtl</Path>
   <Path>engineassets/materials/material_terrain_default.mtl</Path>
   <Path>engineassets/materials/sky/sky.mtl</Path>
   <Path>engineassets/materials/water/ocean_default.mtl</Path>
   <Path>engineassets/texturemsg/defaultsolids.mtl</Path>
   <Path>engineassets/textures/hex_ddn.dds</Path>
-  <Path>engineassets/textures/screenfrost_ddn.dds</Path>
-  <Path>engineassets/textures/water_gloss.dds</Path>
-  <Path>engineassets/textures/white.dds</Path>
-  <Path>engineassets/textures/white_cm.dds</Path>
-  <Path>engineassets/textures/white_cm_diff.dds</Path>
-  <Path>engineassets/textures/white_ddn.dds</Path>
   <Path>libs/environmentpresets/test_all.xml</Path>
  </Dependencies>
 </AssetMetadata>
