@@ -1,6 +1,6 @@
 <ControllerDef>
- <Tags filename="chrysalis/characters/human/female/human_female_tags.xml"/>
- <Fragments filename="chrysalis/characters/human/female/human_female_fragment_ids.xml"/>
+ <Tags filename="chrysalis/characters/human/female/female_tags.xml"/>
+ <Fragments filename="chrysalis/characters/human/female/female_fragment_ids.xml"/>
  <FragmentDefs>
   <Idle scopes="FullBody1P+FullBody3P+SlaveCharacter+SlaveObject"/>
   <Move scopes="FullBody1P+FullBody3P"/>

@@ -1,6 +1,6 @@
 <ControllerDef>
- <Tags filename="chrysalis/characters/human/male/human_male_tags.xml"/>
- <Fragments filename="chrysalis/characters/human/male/human_male_fragment_ids.xml"/>
+ <Tags filename="chrysalis/characters/human/male/male_tags.xml"/>
+ <Fragments filename="chrysalis/characters/human/male/male_fragment_ids.xml"/>
  <FragmentDefs>
   <Idle scopes="FullBody1P+FullBody3P+LookPose">
    <Override tags="ScopeLookPose" scopes="FullBody1P+FullBody3P+LookPose"/>

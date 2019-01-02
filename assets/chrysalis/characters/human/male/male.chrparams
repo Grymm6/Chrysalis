@@ -1,6 +1,6 @@
 <Params>
   <AnimationList>
-    <Animation name="$AnimEventDatabase" path="chrysalis/characters/human/male/animations/human_male.animevents"/>
+    <Animation name="$AnimEventDatabase" path="chrysalis/characters/human/male/animations/male.animevents"/>
     <Animation name="$TracksDatabase" path="chrysalis/characters/human/male/animations/*.dba"/>
     <Animation name="#filepath" path="chrysalis/characters/human/male/animations"/>
     <Animation name="*" path="*/*.caf"/>

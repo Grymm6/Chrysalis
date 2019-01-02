@@ -1,4 +1,4 @@
-<AnimDB FragDef="chrysalis/characters/human/female/human_female_fragment_ids.xml" TagDef="chrysalis/characters/human/female/human_female_tags.xml">
+<AnimDB FragDef="chrysalis/characters/human/female/female_fragment_ids.xml" TagDef="chrysalis/characters/human/female/female_tags.xml">
  <FragmentList>
   <Idle>
    <Fragment BlendOutDuration="0.2" Tags="Unaware">
@@ -30,6 +30,18 @@
      <Blend ExitTime="0" StartTime="0" Duration="0.2"/>
      <Animation name="stand_relaxed_idle" flags="Loop"/>
     </AnimLayer>
+    <ProcLayer>
+     <Blend ExitTime="0" StartTime="0" Duration="0.30000001"/>
+     <Procedural type="Looking">
+      <ProceduralParams CryXmlVersion="2"/>
+     </Procedural>
+    </ProcLayer>
+    <ProcLayer>
+     <Blend ExitTime="0" StartTime="0" Duration="0.30000001"/>
+     <Procedural type="LookPose">
+      <ProceduralParams CryXmlVersion="2" Animation="" BlendTime="1" ScopeLayer="0"/>
+     </Procedural>
+    </ProcLayer>
    </Fragment>
   </Idle>
   <Move>

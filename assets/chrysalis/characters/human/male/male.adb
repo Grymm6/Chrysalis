@@ -1,4 +1,4 @@
-<AnimDB FragDef="chrysalis/characters/human/male/human_male_fragment_ids.xml" TagDef="chrysalis/characters/human/male/human_male_tags.xml">
+<AnimDB FragDef="chrysalis/characters/human/male/male_fragment_ids.xml" TagDef="chrysalis/characters/human/male/male_tags.xml">
   <FragmentList>
     <Idle>
       <Fragment BlendOutDuration="0.2" Tags="Alerted+ScopeLookPose">
