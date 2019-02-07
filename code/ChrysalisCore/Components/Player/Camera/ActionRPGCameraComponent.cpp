@@ -153,13 +153,6 @@ void CActionRPGCameraComponent::UpdateThirdPerson()
 
 	if (pPlayerInput)
 	{
-		//// If the player zoomed all the way in, switch to the first person camera.
-		//float tempZoomGoal = m_lastZoomGoal + m_pCameraManager->GetZoomDelta() * g_cvars.m_actionRPGCameraZoomStep;
-
-		//// Calculate the new zoom goal after asking the player input for zoom level deltas.
-		//m_zoomGoal = clamp_tpl(tempZoomGoal, g_cvars.m_actionRPGCameraZoomMin, g_cvars.m_actionRPGCameraZoomMax);
-		//m_lastZoomGoal = m_zoomGoal;
-
 		// Apply the player input rotation for this frame, and limit the pitch / yaw movement according to the set max and min values.
 		if (pPlayer->GetinteractionState().IsCameraMovementAllowed())
 		{
@@ -178,9 +171,6 @@ void CActionRPGCameraComponent::UpdateThirdPerson()
 		// running interpolation for the following frame. 
 		if ((pEntity) && (!gEnv->IsCutscenePlaying()))
 		{
-			//// Interpolate towards the desired zoom position.
-			//Interpolate(m_zoom, m_zoomGoal, g_cvars.m_actionRPGCameraZoomSpeed, gEnv->pTimer->GetFrameTime());
-
 			// Get the entity we are targeting.
 			auto pTargetEntity = gEnv->pEntitySystem->GetEntity(m_targetEntityID);
 			if (pTargetEntity)
@@ -347,9 +337,6 @@ void CActionRPGCameraComponent::OnDeactivate()
 
 void CActionRPGCameraComponent::ResetCamera()
 {
-	// Zoom can default to it's mid-point.
-//	m_lastZoomGoal = m_zoomGoal = m_zoom = (g_cvars.m_actionRPGCameraZoomMax + g_cvars.m_actionRPGCameraZoomMin) / 2;
-
 	// Default is for zoom level to be as close as possible to fully zoomed in. When toggling from first to third
 	// person camera, this gives the least amount of jerking. 
 	m_lastZoomGoal = m_zoomGoal = m_zoom = g_cvars.m_actionRPGCameraZoomMin;
