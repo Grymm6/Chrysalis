@@ -1,6 +1,7 @@
 #include "StdAfx.h"
 
 #include "ControlledAnimationComponent.h"
+#include <DefaultComponents/ComponentHelpers/PhysicsParameters.h>
 #include <Cry3DEngine/IRenderNode.h>
 
 

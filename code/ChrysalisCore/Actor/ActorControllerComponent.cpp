@@ -392,7 +392,7 @@ void CActorControllerComponent::UpdateAnimation(float frameTime)
 		const bool isTurning = std::abs(m_yawAngularVelocity) > angularVelocityMin;
 
 		// Resolve the animation tags.
-		// HACK: This should be done once on init or on entity changed events or similar. It fails hard if the init order is switched with CAdvancedAnimationComponent.
+		// HACK: This should be done once on init or on entity changed events or similar. It fails hard if the init order is switched with CCharacterAnimationComponent.
 		if ((m_rotateTagId == TAG_ID_INVALID) && (strlen(m_pAdvancedAnimationComponent->GetControllerDefinitionFile()) > 0))
 			m_rotateTagId = m_pAdvancedAnimationComponent->GetTagId("Rotate");
 

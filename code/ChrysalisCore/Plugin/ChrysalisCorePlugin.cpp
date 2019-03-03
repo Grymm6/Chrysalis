@@ -15,6 +15,7 @@
 #include "Actor/Mount/Mount.h"
 #include "Actor/Pet/Pet.h"
 #include "Components/Items/ItemComponent.h"
+#include "Components/Animation/CharacterAnimationComponent.h"
 #include "Components/Animation/ControlledAnimationComponent.h"
 #include "Components/Animation/SimpleAnimationComponent.h"
 #include "Components/Compass/CompassComponent.h"
@@ -137,6 +138,10 @@ void CChrysalisCorePlugin::RegisterComponents(Schematyc::IEnvRegistrar& registra
 		{
 			Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(Chrysalis::CControlledAnimationComponent));
 			Chrysalis::CControlledAnimationComponent::Register(componentScope);
+		}
+		{
+			Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(Chrysalis::CCharacterAnimationComponent));
+			Chrysalis::CCharacterAnimationComponent::Register(componentScope);
 		}
 		{
 			Schematyc::CEnvRegistrationScope componentScope = scope.Register(SCHEMATYC_MAKE_ENV_COMPONENT(Chrysalis::CSimpleAnimationComponent));

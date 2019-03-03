@@ -141,8 +141,10 @@ add_sources("Components_uber.cpp"
 add_sources("Animation_uber.cpp"
     PROJECTS Chrysalis
     SOURCE_GROUP "Components\\\\Animation"
+		"Components/Animation/CharacterAnimationComponent.cpp"
 		"Components/Animation/ControlledAnimationComponent.cpp"
 		"Components/Animation/SimpleAnimationComponent.cpp"
+		"Components/Animation/CharacterAnimationComponent.h"
 		"Components/Animation/ControlledAnimationComponent.h"
 		"Components/Animation/SimpleAnimationComponent.h"
 )
